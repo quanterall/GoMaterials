@@ -1,9 +1,7 @@
 # Updating the Table of Contents
 
-<!--toc-->
-    * [Ubuntu Linux](#ubuntu-linux)
-
-<!-- tocstop -->
+- [Updating the Table of Contents](#updating-the-table-of-contents)
+	- [Ubuntu Linux](#ubuntu-linux)
 
 ## Ubuntu Linux
 
