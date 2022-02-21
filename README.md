@@ -19,6 +19,41 @@ beginner- and intermediate-level gotchas that almost everyone falls into.
 	- [Going Deeper](#going-deeper)
 		- [The Greats](#the-greats)
 
+## About Go
+
+Go is a programming language that was originally developed within Google by 
+Ken Thompson, Rob Pike and Robert Griesemer, as a way to both reduce the 
+amount of resources and time wasted by C++ compilation, and as a means to 
+more rapidly inducting new developers into back-end systems programming.
+
+As such, Go has a very minimal set of reserved words, and relatively 
+speaking, a quite small standard library.
+
+Go is a great language to start with as a new developer because there is so 
+little, and so little that isn't essential, to learn, in order to use the 
+language.
+
+It has some minor downsides, the worst one being its 'toy' reputation, in 
+part justified by 'serious' programmers by the existence of a Garbage 
+Collector. 
+
+However, practically the entire internet depends on applications 
+that are written in Go, namely Docker, Kubernetes, and within the Open 
+Source Unix command line environment, a growing number of very useful tools 
+are making it into base installations of linux.
+
+The only real caveats for systems programming with Go come from the 
+goroutine scheduling system, which sometimes has to be manually overridden 
+for specific types of tasks, in very large applications there can be memory 
+management issues, which can be often fixed by tuning the GC's threshold for 
+activation, and it is pretty much useless for emebedded systems, kernels, 
+and *binary* GUI applicaitons (although Gio and Nucular are becoming 
+reasonably usable now).
+
+It is especially suitable for writing peer to peer applications, hence the 
+primary implementation of IPFS is in Go, also, as is the first language of 
+the libp2p library that spawned out of the IPFS project.
+
 ## Setting up Go Dev Environment
 
 [Installation and Environment Setup](basics/installation.md) - Recommended
@@ -137,9 +172,10 @@ names in the field, and searching github for packages that do things.
 
 ### The Greats
 
-- #### (The Go Blog)[https://go.dev/blog/]
+#### [The Go Blog](https://go.dev/blog/)
 
   Several of the Go Authors and other Google folk post articles on this blog.
   Rob Pike, Russ Cox, Ian Lance Taylor, Robert Griesemer, Ken Thompson.
 
-- #### (Dave Cheney)[https://dave.cheney.net/]
+#### [Dave Cheney](https://dave.cheney.net/)
+
