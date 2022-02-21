@@ -4,6 +4,7 @@ A collection of things, links and howtos to get up to speed and avoid the
 beginner- and intermediate-level gotchas that almost everyone falls into.
 
 - [GoMaterials](#gomaterials)
+	- [About Go](#about-go)
 	- [Setting up Go Dev Environment](#setting-up-go-dev-environment)
 	- [First Steps](#first-steps)
 	- [The Tour](#the-tour)
@@ -18,6 +19,8 @@ beginner- and intermediate-level gotchas that almost everyone falls into.
 			- [Set up the receiver first, before trying to send to it](#set-up-the-receiver-first-before-trying-to-send-to-it)
 	- [Going Deeper](#going-deeper)
 		- [The Greats](#the-greats)
+			- [The Go Blog](#the-go-blog)
+			- [Dave Cheney](#dave-cheney)
 
 ## About Go
 
