@@ -4,27 +4,32 @@ A collection of things, links and howtos to get up to speed and avoid the
 beginner- and intermediate-level gotchas that almost everyone falls into.
 
 - [GoMaterials](#gomaterials)
-    - [About Go](#about-go)
-    - [Setting up Go Dev Environment](#setting-up-go-dev-environment)
-    - [First Steps](#first-steps)
-    - [The Tour](#the-tour)
-    - [Traps for Newly Minted Gophers](#traps-for-newly-minted-gophers)
-        - ["Reference Types"](#reference-types)
-        - [Scope Shadowing](#scope-shadowing)
-        - [Newbies and Architecture](#newbies-and-architecture)
-        - [Channels and Goroutines](#channels-and-goroutines)
-            - [Selectors are random](#selectors-are-random)
-            - [Unbuffered channels block](#unbuffered-channels-block)
-            - [Set up the receiver first, before trying to send to it](#set-up-the-receiver-first-before-trying-to-send-to-it)
-    - [Going Deeper](#going-deeper)
-        - [General Resources](#general-resources)
-            - [https://go.dev](#httpsgodev)
-            - [https://pkg.go.dev/ (formerly known as godoc)](#httpspkggodev-formerly-known-as-godoc)
-            - [https://en.wikipedia.org/wiki/Go_(programming_language))](#httpsenwikipediaorgwikigoprogramminglanguage)
-            - [https://github.com/avelino/awesome-go](#httpsgithubcomavelinoawesome-go)
-        - [The Greats](#the-greats)
-            - [The Go Blog](#the-go-blog)
-            - [Dave Cheney](#dave-cheney)
+	- [About Go](#about-go)
+	- [Setting up Go Dev Environment](#setting-up-go-dev-environment)
+	- [Compilation](#compilation)
+	- [First Steps](#first-steps)
+	- [The Tour](#the-tour)
+	- [Traps for Newly Minted Gophers](#traps-for-newly-minted-gophers)
+		- ["Reference Types"](#reference-types)
+		- [Scope Shadowing](#scope-shadowing)
+		- [Architecture](#architecture)
+			- [Packages](#packages)
+			- [Modules](#modules)
+		- [Channels and Goroutines](#channels-and-goroutines)
+			- [Selectors are random](#selectors-are-random)
+			- [Unbuffered channels block](#unbuffered-channels-block)
+			- [Set up the receiver first, before trying to send to it](#set-up-the-receiver-first-before-trying-to-send-to-it)
+	- [Tutorials](#tutorials)
+		- [Human Readable Binary Codec](#human-readable-binary-codec)
+	- [Going Deeper](#going-deeper)
+		- [General Resources](#general-resources)
+			- [https://go.dev](#httpsgodev)
+			- [https://pkg.go.dev/ (formerly known as godoc)](#httpspkggodev-formerly-known-as-godoc)
+			- [https://en.wikipedia.org/wiki/Go_(programming_language))](#httpsenwikipediaorgwikigoprogramminglanguage)
+			- [https://github.com/avelino/awesome-go](#httpsgithubcomavelinoawesome-go)
+		- [The Greats](#the-greats)
+			- [The Go Blog](#the-go-blog)
+			- [Dave Cheney](#dave-cheney)
 
 ## About Go
 
@@ -239,6 +244,12 @@ unbuffered channel will block execution of the subsequent receive.
 - In the case of two separate goroutines (such as the main, and a goroutine)
   you must spawn the goroutine with the receiver **before** you attempt to send
   anything to it.
+
+## Tutorials
+
+### Human Readable Binary Codec
+
+[tutorials/binarycodec/README.md](tutorials/binarycodec/README.md)
 
 ## Going Deeper
 
