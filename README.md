@@ -20,7 +20,7 @@ beginner- and intermediate-level gotchas that almost everyone falls into.
 			- [Unbuffered channels block](#unbuffered-channels-block)
 			- [Set up the receiver first, before trying to send to it](#set-up-the-receiver-first-before-trying-to-send-to-it)
 	- [Tutorials](#tutorials)
-		- [Human Readable Binary Codec](#human-readable-binary-codec)
+		- [The Kitchen sink: Human Readable Binary Transcription Codec with Microservice](#the-kitchen-sink-human-readable-binary-transcription-codec-with-microservice)
 	- [Going Deeper](#going-deeper)
 		- [General Resources](#general-resources)
 			- [https://go.dev](#httpsgodev)
@@ -247,9 +247,9 @@ unbuffered channel will block execution of the subsequent receive.
 
 ## Tutorials
 
-### Human Readable Binary Codec
+### The Kitchen sink: Human Readable Binary Transcription Codec with Microservice
 
-[tutorials/binarycodec/README.md](tutorials/binarycodec/README.md)
+[github.com/quanterall/kitchensink](https://github.com/quanterall/kitchensink)
 
 ## Going Deeper
 
